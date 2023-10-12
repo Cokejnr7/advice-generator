@@ -7,17 +7,27 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
   <link rel="stylesheet" href="index.css" type="text/css">
   
 </head>
 <body>
   <div class="card">
    <h3>Advice #</h3>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Accusantium deleniti iusto non consectetur suscipit impedit sit fugit debitis asperiores cumque? 
-    Aspernatur rem perferendis similique reiciendis earum inventore hic, maxime est.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Accusanti debitis asperiores cumque? 
+    &rdquo;
   </p>
+
+  <picture>
+    <source srcset="images/pattern-divider-mobile.svg" media="(max-width:480px)">
+    <img srcset="images/pattern-divider-desktop.svg">
+  </picture>
+
     <div class="dice-icon-container">
       <img src="images/icon-dice.svg" alt="dice" id="dice">
     </div>
