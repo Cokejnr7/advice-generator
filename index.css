@@ -16,6 +16,9 @@
 
     /* fonts */
     --font-Manrope: 'Manrope', sans-serif;
+
+    /* measurements */
+    --dice-container-size: 5rem;
 }
 
 html {
@@ -26,11 +29,42 @@ body {
     width: 100%;
     min-height: 100%;
     background-color: var(--Dark-Blue);
+    font-family: var(--font-Manrope);
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card {
+    position: relative;
+    background-color: var(--Dark-Grayish-Blue);
+    max-width: 35rem;
+    max-height: 21rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.dice-icon-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, calc(var(--dice-container-size)/2));
+    background-color: var(--Neon-Green);
+    width: var(--dice-container-size);
+    height: var(--dice-container-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
 
 /*-------------------------------------- attribution ----------------------------------------- */
 .attribution {
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     position: absolute;
     bottom: 5px;
